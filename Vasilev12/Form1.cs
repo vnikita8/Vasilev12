@@ -16,5 +16,13 @@ namespace Vasilev12
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ACipher aCipher = new ACipher();
+            aCipher.encryption = "АбВгДЯ";
+            aCipher.encode();
+            richTextBox1.Text = aCipher.encryption;
+        }
     }
 }
