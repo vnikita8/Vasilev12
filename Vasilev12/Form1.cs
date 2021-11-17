@@ -22,7 +22,14 @@ namespace Vasilev12
             ACipher aCipher = new ACipher();
             aCipher.encryption = "АбВгДЯ";
             aCipher.encode();
-            richTextBox1.Text = aCipher.encryption;
+            richTextBox1.Text = aCipher.encryption; 
+            BCipher aBCCipher = new BCipher();
+            aBCCipher.encryption = "АБВа";
+            aBCCipher.encode();
+            //string text = Convert.ToString(Convert.ToChar('Я' - 'Б'));
+            richTextBox2.Text = aBCCipher.encryption;
+            aBCCipher.decode();
+            richTextBox2.Text += aBCCipher.encryption;
         }
     }
 }
