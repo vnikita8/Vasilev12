@@ -26,15 +26,15 @@ namespace Vasilev12
 
     internal class Circle : Point 
     {
-        public void Area() { }
+        public double radius { get; set; }
+        public double Area() { return Math.PI * Math.Pow(radius, 2); }
     }
 
     internal class Rectangle : Point
     {
-        public void Area()
-        {
-
-        }
+        public double height { get; set; }
+        public double width { get; set; } 
+        public double Area(){return height * width;}
     }
 
 }

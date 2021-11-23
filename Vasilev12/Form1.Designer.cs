@@ -30,31 +30,45 @@
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(16, 15);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(230, 336);
+            this.richTextBox1.Size = new System.Drawing.Size(305, 413);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(280, 12);
+            this.richTextBox2.Location = new System.Drawing.Point(373, 15);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(230, 336);
+            this.richTextBox2.Size = new System.Drawing.Size(305, 413);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
             // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(732, 15);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(305, 413);
+            this.richTextBox3.TabIndex = 2;
+            this.richTextBox3.Text = "";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1054, 438);
+            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -66,6 +80,7 @@
 
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }
 
